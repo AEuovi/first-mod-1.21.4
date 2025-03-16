@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "first-mod",
+	"version": "${version}",
+	"name": "First Mod",
+	"description": "Me first mod",
+	"authors": [
+		"AEuovi (Greek_Lemon, autistic)"
+	],
+	"contact": {
+		"homepage": "none lol",
+		"sources": "where?"
+	},
+	"license": "MIT",
+	"icon": "assets/first-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.aeuovi.firstmod.FirstMod"
+		],
+		"fabric-datagen": [
+			"com.aeuovi.firstmod.FirstModDataGenerator"
+		],
+		"client": [
+			"com.aeuovi.firstmod.FirstModClient"
+		]
+	},
+	"mixins": [
+		"first-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
